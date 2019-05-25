@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="85" failed="0" total="87" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="103107" started-at="2019-05-25T05:04:58Z" finished-at="2019-05-25T05:06:41Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="103107" started-at="2019-05-25T05:04:58Z" finished-at="2019-05-25T05:06:41Z">
+      <class name="com.qa.testcases.DashBoardPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="19319" started-at="2019-05-25T10:35:27Z" finished-at="2019-05-25T10:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLogoWithVersion()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateLogoWithVersion" duration-ms="1791" started-at="2019-05-25T10:35:46Z" finished-at="2019-05-25T10:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoWithVersion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="176" started-at="2019-05-25T10:35:48Z" finished-at="2019-05-25T10:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:35:48Z" finished-at="2019-05-25T10:35:48Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.09 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59919}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir14104_26966}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 26a2d64f266870d89048638ab19500c7
+*** Element info: {Using=xpath, value=//input[@id='email']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.09 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59919}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir14104_26966}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 26a2d64f266870d89048638ab19500c7
+*** Element info: {Using=xpath, value=//input[@id='email']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at com.qa.pages.LoginPage.CheckValideEmailAndPassword(LoginPage.java:153)
+	at com.qa.testcases.DashBoardPageTest.setUp(DashBoardPageTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:04Z" finished-at="2019-05-25T10:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateTitleofDashboard()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateTitleofDashboard" duration-ms="0" started-at="2019-05-25T10:36:04Z" finished-at="2019-05-25T10:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleofDashboard -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateShopCartText()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateShopCartText" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShopCartText -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateCustomerLogoLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateCustomerLogoLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCustomerLogoLink -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateShopCartLogoLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateShopCartLogoLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShopCartLogoLink -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateShowOrderLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateShowOrderLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShowOrderLink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateShowAllCustomerLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateShowAllCustomerLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShowAllCustomerLink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateShowAllMessages()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateShowAllMessages" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShowAllMessages -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateMessageBoxLogo()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateMessageBoxLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessageBoxLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateQuickAccessBtnColor()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateQuickAccessBtnColor" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateQuickAccessBtnColor -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateClickOnQuickAccess()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateClickOnQuickAccess" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClickOnQuickAccess -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateQuickAccess1Option()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateQuickAccess1Option" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateQuickAccess1Option -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateQuickAccess2Option()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateQuickAccess2Option" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateQuickAccess2Option -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateQuickAccess3Option()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateQuickAccess3Option" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateQuickAccess3Option -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateaddCurrentPageToQuickAccess()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateaddCurrentPageToQuickAccess" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateaddCurrentPageToQuickAccess -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateConnectToPrestashopMarketPlaceAccountcolor()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateConnectToPrestashopMarketPlaceAccountcolor" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateConnectToPrestashopMarketPlaceAccountcolor -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateconnectToPrestashopMarketPlaceAccount()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateconnectToPrestashopMarketPlaceAccount" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateconnectToPrestashopMarketPlaceAccount -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateMyShopLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="validateMyShopLink" duration-ms="11" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyShopLink -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidateclickOnSystemAdministrator()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnSystemAdministrator" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnSystemAdministrator -->
+        <test-method status="SKIP" signature="ValidateclickOnSignOutBtn()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnSignOutBtn" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnSignOutBtn -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateIsDemoModeBtnEnabled()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateIsDemoModeBtnEnabled" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateIsDemoModeBtnEnabled -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateClickOnHelpMenuBtn()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateClickOnHelpMenuBtn" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickOnHelpMenuBtn -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidateColorOfSearchBox()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateColorOfSearchBox" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateColorOfSearchBox -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateSearchBoxBtn()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateSearchBoxBtn" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSearchBoxBtn -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidatecountAllLinksOfCurrentPage()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidatecountAllLinksOfCurrentPage" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatecountAllLinksOfCurrentPage -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateOrderslink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateOrderslink" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateOrderslink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateCatalogLink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateCatalogLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCatalogLink -->
+        <test-method status="SKIP" signature="ValiodateClickOnCustomers()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValiodateClickOnCustomers" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValiodateClickOnCustomers -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateClickOnPriceRules()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateClickOnPriceRules" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickOnPriceRules -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateclickOnModulesAndServices()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnModulesAndServices" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnModulesAndServices -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidateclickOnShipping()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnShipping" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnShipping -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidateclickOnLocalization()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnLocalization" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnLocalization -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateclickOnPreferences()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnPreferences" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnPreferences -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateclickOnAdvancedParameters()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnAdvancedParameters" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnAdvancedParameters -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateclickOnAdministration()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnAdministration" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnAdministration -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="ValidateclickOnStates()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnStates" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnStates -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateClickOnMaximizeDashboard()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateClickOnMaximizeDashboard" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickOnMaximizeDashboard -->
+        <test-method status="SKIP" signature="ValidateclickOnContactBtn()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateclickOnContactBtn" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateclickOnContactBtn -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ValidateMerchandslink()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="ValidateMerchandslink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMerchandslink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DashBoardPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.DashBoardPageTest -->
+      <class name="com.qa.testcases.MerchandsPageTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:15Z" finished-at="2019-05-25T10:36:15Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.03 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.03 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at com.qa.base.TestBase.Initialization(TestBase.java:36)
+	at com.qa.testcases.MerchandsPageTest.setup(MerchandsPageTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateTitleOfMerchandsPage()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateTitleOfMerchandsPage" duration-ms="0" started-at="2019-05-25T10:36:24Z" finished-at="2019-05-25T10:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleOfMerchandsPage -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:24Z" finished-at="2019-05-25T10:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateHelpMenu()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateHelpMenu" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHelpMenu -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateEnableYes()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateEnableYes" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEnableYes -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateEnableNo()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateEnableNo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEnableNo -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateReturnsPrefix()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateReturnsPrefix" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateReturnsPrefix -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateTimeLimitOfValidity()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateTimeLimitOfValidity" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTimeLimitOfValidity -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateSavebtn()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="validateSavebtn" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSavebtn -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.MerchandsPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.MerchandsPageTest -->
+      <class name="com.qa.testcases.AddNewPageTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.qa.testcases.AddNewPageTest@5056dfcb]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:04Z" finished-at="2019-05-25T10:36:04Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.50 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.50 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at com.qa.base.TestBase.Initialization(TestBase.java:36)
+	at com.qa.testcases.AddNewPageTest.setup(AddNewPageTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateAddNewCustomer()[pri:0, instance:com.qa.testcases.AddNewPageTest@5056dfcb]" name="validateAddNewCustomer" duration-ms="1" started-at="2019-05-25T10:36:08Z" finished-at="2019-05-25T10:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddNewCustomer -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.AddNewPageTest@5056dfcb]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateSwithchToWindow()[pri:0, instance:com.qa.testcases.AddNewPageTest@5056dfcb]" name="validateSwithchToWindow" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSwithchToWindow -->
+      </class> <!-- com.qa.testcases.AddNewPageTest -->
+      <class name="com.qa.testcases.LoginPageTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:08Z" finished-at="2019-05-25T10:36:08Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.17 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.17 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at com.qa.base.TestBase.Initialization(TestBase.java:36)
+	at com.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateTitle()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateTitle" duration-ms="0" started-at="2019-05-25T10:36:15Z" finished-at="2019-05-25T10:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:15Z" finished-at="2019-05-25T10:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validatePrestaLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validatePrestaLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrestaLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validatePrestaLogoText()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validatePrestaLogoText" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrestaLogoText -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateCurrentUrl()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateCurrentUrl" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCurrentUrl -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateTextBelowLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateTextBelowLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTextBelowLogo -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateEmailLable()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateEmailLable" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmailLable -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateEmailPlaceholder()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateEmailPlaceholder" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmailPlaceholder -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validatePasswordPlaceholder()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validatePasswordPlaceholder" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePasswordPlaceholder -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateBlankEmailPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateBlankEmailPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBlankEmailPassword -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateBlankEmailAndValidPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateBlankEmailAndValidPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBlankEmailAndValidPassword -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateCorrectEmailAndBlankPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateCorrectEmailAndBlankPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCorrectEmailAndBlankPassword -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateCorrectEmailAndInvalidPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateCorrectEmailAndInvalidPassword" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCorrectEmailAndInvalidPassword -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateInvalidEmailAndValidPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateInvalidEmailAndValidPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidEmailAndValidPassword -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateInvalidEmailAndInvalidPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateInvalidEmailAndInvalidPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidEmailAndInvalidPassword -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validEmailAndPassword()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validEmailAndPassword" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailAndPassword -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateColorOfLoginBtn()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateColorOfLoginBtn" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateColorOfLoginBtn -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateForgotPasswordLink()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateForgotPasswordLink" duration-ms="1" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForgotPasswordLink -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateIscheckBoXSelectedNot()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateIscheckBoXSelectedNot" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIscheckBoXSelectedNot -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateIscheckBoXSelected()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateIscheckBoXSelected" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIscheckBoXSelected -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateStayLoginText()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateStayLoginText" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStayLoginText -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateRighReserveLink()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateRighReserveLink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRighReserveLink -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateTwitterLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateTwitterLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTwitterLogo -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateFacebookLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateFacebookLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFacebookLogo -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateGithubLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateGithubLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGithubLogo -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateGoogleLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateGoogleLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGoogleLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateColorOfTwitterLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateColorOfTwitterLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateColorOfTwitterLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateColorOfFacebookLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateColorOfFacebookLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateColorOfFacebookLogo -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateColorOfGoogleLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateColorOfGoogleLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateColorOfGoogleLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateColorOfGitHubLogo()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateColorOfGitHubLogo" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateColorOfGitHubLogo -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateRightsReserveLinkIsDisplayed()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="validateRightsReserveLinkIsDisplayed" duration-ms="108" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRightsReserveLinkIsDisplayed -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+      <class name="com.qa.testcases.OrderPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="26760" started-at="2019-05-25T10:34:58Z" finished-at="2019-05-25T10:35:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatClickOnAddNewUser()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validatClickOnAddNewUser" duration-ms="1319" started-at="2019-05-25T10:35:25Z" finished-at="2019-05-25T10:35:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatClickOnAddNewUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="227" started-at="2019-05-25T10:35:26Z" finished-at="2019-05-25T10:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:24Z" finished-at="2019-05-25T10:36:24Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.04 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60039}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir7916_16360}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73cd2c6448c7814a757332eb80e05b02]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.04 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Priyanka_Acer', ip: '192.168.43.180', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60039}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir7916_16360}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73cd2c6448c7814a757332eb80e05b02
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
+	at com.qa.base.TestBase.Initialization(TestBase.java:44)
+	at com.qa.testcases.OrderPageTest.setup(OrderPageTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validatesearchForOrder()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validatesearchForOrder" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesearchForOrder -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateOrderPageTitle()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validateOrderPageTitle" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderPageTitle -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateHelpMenu()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validateHelpMenu" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHelpMenu -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateAbanbonedCartslink()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validateAbanbonedCartslink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAbanbonedCartslink -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="validateExportlink()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validateExportlink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateExportlink -->
+        <test-method status="SKIP" signature="validatecheckRefreshlink()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validatecheckRefreshlink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatecheckRefreshlink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validatecheckshowSqlQuerylink()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validatecheckshowSqlQuerylink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatecheckshowSqlQuerylink -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="setup" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateExportToSqlManagerlink()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="validateExportToSqlManagerlink" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateExportToSqlManagerlink -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.OrderPageTest@97e1986]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-25T10:36:41Z" finished-at="2019-05-25T10:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.OrderPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">8</td><td class="numi">8</td><td class="numi_attn">79</td><td class="numi">0</td><td class="numi">296.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755911717</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="2">com.qa.testcases.DashBoardPageTest</td><td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755930474</td><td class="numi">0</td></tr><tr class="failedeven"><td><a href="#m3"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755930474</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.AddNewPageTest</td><td><a href="#m4"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755848600</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755871944</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m6"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755892355</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m7"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755911717</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m8"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755930474</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.testcases.AddNewPageTest</td><td><a href="#m9"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755848600</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m10"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755871944</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m11"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755892355</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m12"><b>setup</b>  </a></td><td class="numi">1</td><td>1558755911717</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m13"><b>setUp</b>  </a></td><td class="numi">1</td><td>1558755930474</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.qa.testcases.OrderPageTest</td><td><a href="#m14"><b>setup</b>  </a></td><td class="numi">6</td><td>1558755945797</td><td class="numi">106</td></tr><tr class="skippedodd"><td><a href="#m15"><b>tearDown</b>  </a></td><td class="numi">7</td><td>1558755930473</td><td class="numi">15431</td></tr>
+<tr class="skippedeven"><td rowspan="4">com.qa.testcases.DashBoardPageTest</td><td><a href="#m16"><b>setUp</b>  </a></td><td class="numi">35</td><td>1558755945801</td><td class="numi">1104</td></tr><tr class="skippedeven"><td><a href="#m17"><b>tearDown</b>  </a></td><td class="numi">36</td><td>1558755945782</td><td class="numi">1130</td></tr><tr class="skippedeven"><td><a href="#m18"><b>setUp</b>  </a></td><td class="numi">35</td><td>1558755945801</td><td class="numi">1104</td></tr><tr class="skippedeven"><td><a href="#m19"><b>tearDown</b>  </a></td><td class="numi">36</td><td>1558755945782</td><td class="numi">1130</td></tr>
+<tr class="skippedodd"><td rowspan="2">com.qa.testcases.LoginPageTest</td><td><a href="#m20"><b>setUp</b>  </a></td><td class="numi">28</td><td>1558755945783</td><td class="numi">1078</td></tr><tr class="skippedodd"><td><a href="#m21"><b>tearDown</b>  </a></td><td class="numi">29</td><td>1558755892354</td><td class="numi">54508</td></tr>
+<tr class="skippedeven"><td rowspan="2">com.qa.testcases.MerchandsPageTest</td><td><a href="#m22"><b>setup</b>  </a></td><td class="numi">5</td><td>1558755945793</td><td class="numi">87</td></tr><tr class="skippedeven"><td><a href="#m23"><b>tearDown</b>  </a></td><td class="numi">6</td><td>1558755911716</td><td class="numi">34166</td></tr>
+<tr class="skippedodd"><td rowspan="2">com.qa.testcases.OrderPageTest</td><td><a href="#m24"><b>setup</b>  </a></td><td class="numi">6</td><td>1558755945797</td><td class="numi">106</td></tr><tr class="skippedodd"><td><a href="#m25"><b>tearDown</b>  </a></td><td class="numi">7</td><td>1558755930473</td><td class="numi">15431</td></tr>
+<tr class="skippedeven"><td rowspan="2">com.qa.testcases.DashBoardPageTest</td><td><a href="#m26"><b>setUp</b>  </a></td><td class="numi">35</td><td>1558755945801</td><td class="numi">1104</td></tr><tr class="skippedeven"><td><a href="#m27"><b>tearDown</b>  </a></td><td class="numi">36</td><td>1558755945782</td><td class="numi">1130</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m28"><b>setUp</b>  </a></td><td class="numi">28</td><td>1558755945783</td><td class="numi">1078</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m29"><b>setup</b>  </a></td><td class="numi">5</td><td>1558755945793</td><td class="numi">87</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m30"><b>setup</b>  </a></td><td class="numi">6</td><td>1558755945797</td><td class="numi">106</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m31"><b>setUp</b>  </a></td><td class="numi">35</td><td>1558755945801</td><td class="numi">1104</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.AddNewPageTest</td><td><a href="#m32"><b>validateSwithchToWindow</b>  </a></td><td class="numi">1</td><td>1558755871941</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m33"><b>validatePrestaLogo</b>  </a></td><td class="numi">1</td><td>1558755892352</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m34"><b>validateHelpMenu</b>  </a></td><td class="numi">1</td><td>1558755911713</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m35"><b>validateOrderPageTitle</b>  </a></td><td class="numi">1</td><td>1558755930471</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m36"><b>validateCustomerLogoLink</b>  </a></td><td class="numi">1</td><td>1558755945762</td><td class="numi">4</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m37"><b>validatePrestaLogoText</b>  </a></td><td class="numi">1</td><td>1558755945784</td><td class="numi">3</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m38"><b>validateEnableYes</b>  </a></td><td class="numi">1</td><td>1558755945794</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m39"><b>validateHelpMenu</b>  </a></td><td class="numi">1</td><td>1558755945798</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m40"><b>validateShopCartLogoLink</b>  </a></td><td class="numi">1</td><td>1558755945802</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m41"><b>validateCurrentUrl</b>  </a></td><td class="numi">1</td><td>1558755945805</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m42"><b>validateEnableNo</b>  </a></td><td class="numi">1</td><td>1558755945809</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m43"><b>validateAbanbonedCartslink</b>  </a></td><td class="numi">1</td><td>1558755945816</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m44"><b>validateShowOrderLink</b>  </a></td><td class="numi">1</td><td>1558755945823</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m45"><b>validateTextBelowLogo</b>  </a></td><td class="numi">1</td><td>1558755945826</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m46"><b>validateReturnsPrefix</b>  </a></td><td class="numi">1</td><td>1558755945829</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m47"><b>validateExportlink</b>  </a></td><td class="numi">1</td><td>1558755945832</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m48"><b>validateShowAllCustomerLink</b>  </a></td><td class="numi">1</td><td>1558755945834</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m49"><b>validateEmailLable</b>  </a></td><td class="numi">1</td><td>1558755945836</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m50"><b>validateTimeLimitOfValidity</b>  </a></td><td class="numi">1</td><td>1558755945838</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m51"><b>validatecheckRefreshlink</b>  </a></td><td class="numi">1</td><td>1558755945852</td><td class="numi">2</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m52"><b>validateShowAllMessages</b>  </a></td><td class="numi">1</td><td>1558755945855</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m53"><b>validateEmailPlaceholder</b>  </a></td><td class="numi">1</td><td>1558755945873</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m54"><b>validateSavebtn</b>  </a></td><td class="numi">1</td><td>1558755945881</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m55"><b>validatecheckshowSqlQuerylink</b>  </a></td><td class="numi">1</td><td>1558755945887</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m56"><b>validateMessageBoxLogo</b>  </a></td><td class="numi">1</td><td>1558755945889</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m57"><b>validatePasswordPlaceholder</b>  </a></td><td class="numi">1</td><td>1558755945901</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m58"><b>validateExportToSqlManagerlink</b>  </a></td><td class="numi">1</td><td>1558755945903</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m59"><b>validateQuickAccessBtnColor</b>  </a></td><td class="numi">1</td><td>1558755945941</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m60"><b>validateBlankEmailPassword</b>  </a></td><td class="numi">1</td><td>1558755945944</td><td class="numi">13</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m61"><b>validateClickOnQuickAccess</b>  </a></td><td class="numi">1</td><td>1558755945959</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m62"><b>validateBlankEmailAndValidPassword</b>  </a></td><td class="numi">1</td><td>1558755945961</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m63"><b>validateQuickAccess1Option</b>  </a></td><td class="numi">1</td><td>1558755945979</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m64"><b>validateCorrectEmailAndBlankPassword</b>  </a></td><td class="numi">1</td><td>1558755945993</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m65"><b>validateQuickAccess2Option</b>  </a></td><td class="numi">1</td><td>1558755945995</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m66"><b>validateCorrectEmailAndInvalidPassword</b>  </a></td><td class="numi">1</td><td>1558755945997</td><td class="numi">23</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m67"><b>validateQuickAccess3Option</b>  </a></td><td class="numi">1</td><td>1558755946024</td><td class="numi">2</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m68"><b>validateInvalidEmailAndValidPassword</b>  </a></td><td class="numi">1</td><td>1558755946053</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m69"><b>validateaddCurrentPageToQuickAccess</b>  </a></td><td class="numi">1</td><td>1558755946056</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m70"><b>validateInvalidEmailAndInvalidPassword</b>  </a></td><td class="numi">1</td><td>1558755946131</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m71"><b>validateConnectToPrestashopMarketPlaceAccountcolor</b>  </a></td><td class="numi">1</td><td>1558755946167</td><td class="numi">8</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m72"><b>validEmailAndPassword</b>  </a></td><td class="numi">1</td><td>1558755946179</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m73"><b>validateconnectToPrestashopMarketPlaceAccount</b>  </a></td><td class="numi">1</td><td>1558755946183</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m74"><b>validateColorOfLoginBtn</b>  </a></td><td class="numi">1</td><td>1558755946186</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m75"><b>validateMyShopLink</b>  </a></td><td class="numi">1</td><td>1558755946190</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m76"><b>validateForgotPasswordLink</b>  </a></td><td class="numi">1</td><td>1558755946193</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m77"><b>ValidateclickOnSystemAdministrator</b>  </a></td><td class="numi">1</td><td>1558755946197</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m78"><b>validateIscheckBoXSelectedNot</b>  </a></td><td class="numi">1</td><td>1558755946200</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m79"><b>ValidateclickOnSignOutBtn</b>  </a></td><td class="numi">1</td><td>1558755946202</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m80"><b>validateIscheckBoXSelected</b>  </a></td><td class="numi">1</td><td>1558755946205</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m81"><b>ValidateIsDemoModeBtnEnabled</b>  </a></td><td class="numi">1</td><td>1558755946207</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m82"><b>validateStayLoginText</b>  </a></td><td class="numi">1</td><td>1558755946211</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m83"><b>ValidateClickOnHelpMenuBtn</b>  </a></td><td class="numi">1</td><td>1558755946213</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m84"><b>validateRighReserveLink</b>  </a></td><td class="numi">1</td><td>1558755946237</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m85"><b>ValidateColorOfSearchBox</b>  </a></td><td class="numi">1</td><td>1558755946764</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m86"><b>validateTwitterLogo</b>  </a></td><td class="numi">1</td><td>1558755946767</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m87"><b>ValidateSearchBoxBtn</b>  </a></td><td class="numi">1</td><td>1558755946770</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m88"><b>validateFacebookLogo</b>  </a></td><td class="numi">1</td><td>1558755946773</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m89"><b>ValidatecountAllLinksOfCurrentPage</b>  </a></td><td class="numi">1</td><td>1558755946776</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m90"><b>validateGithubLogo</b>  </a></td><td class="numi">1</td><td>1558755946779</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m91"><b>ValidateOrderslink</b>  </a></td><td class="numi">1</td><td>1558755946782</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m92"><b>validateGoogleLogo</b>  </a></td><td class="numi">1</td><td>1558755946785</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m93"><b>ValidateCatalogLink</b>  </a></td><td class="numi">1</td><td>1558755946786</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m94"><b>validateColorOfTwitterLogo</b>  </a></td><td class="numi">1</td><td>1558755946788</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m95"><b>ValiodateClickOnCustomers</b>  </a></td><td class="numi">1</td><td>1558755946790</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m96"><b>validateColorOfFacebookLogo</b>  </a></td><td class="numi">1</td><td>1558755946828</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m97"><b>ValidateClickOnPriceRules</b>  </a></td><td class="numi">1</td><td>1558755946830</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m98"><b>validateColorOfGoogleLogo</b>  </a></td><td class="numi">1</td><td>1558755946838</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m99"><b>ValidateclickOnModulesAndServices</b>  </a></td><td class="numi">1</td><td>1558755946840</td><td class="numi">7</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m100"><b>validateColorOfGitHubLogo</b>  </a></td><td class="numi">1</td><td>1558755946849</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m101"><b>ValidateclickOnShipping</b>  </a></td><td class="numi">1</td><td>1558755946851</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m102"><b>validateRightsReserveLinkIsDisplayed</b>  </a></td><td class="numi">1</td><td>1558755946861</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="8">com.qa.testcases.DashBoardPageTest</td><td><a href="#m103"><b>ValidateclickOnLocalization</b>  </a></td><td class="numi">1</td><td>1558755946870</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m104"><b>ValidateclickOnPreferences</b>  </a></td><td class="numi">1</td><td>1558755946872</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m105"><b>ValidateclickOnAdvancedParameters</b>  </a></td><td class="numi">1</td><td>1558755946874</td><td class="numi">9</td></tr><tr class="skippedeven"><td><a href="#m106"><b>ValidateclickOnAdministration</b>  </a></td><td class="numi">1</td><td>1558755946884</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m107"><b>ValidateclickOnStates</b>  </a></td><td class="numi">1</td><td>1558755946891</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m108"><b>ValidateClickOnMaximizeDashboard</b>  </a></td><td class="numi">1</td><td>1558755946892</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m109"><b>ValidateclickOnContactBtn</b>  </a></td><td class="numi">1</td><td>1558755946903</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m110"><b>ValidateMerchandslink</b>  </a></td><td class="numi">1</td><td>1558755946905</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m111"><b>validatClickOnAddNewUser</b>  </a></td><td class="numi">1</td><td>1558755675423</td><td class="numi">1314</td></tr>
+<tr class="passedeven"><td rowspan="2">com.qa.testcases.DashBoardPageTest</td><td><a href="#m112"><b>validateLogoWithVersion</b>  </a></td><td class="numi">1</td><td>1558755694317</td><td class="numi">2149</td></tr><tr class="passedeven"><td><a href="#m113"><b>validateTitleofDashboard</b>  </a></td><td class="numi">1</td><td>1558755713443</td><td class="numi">155</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.testcases.AddNewPageTest</td><td><a href="#m114"><b>validateAddNewCustomer</b>  </a></td><td class="numi">1</td><td>1558755742492</td><td class="numi">2454</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m115"><b>validateTitle</b>  </a></td><td class="numi">1</td><td>1558755757592</td><td class="numi">33</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.testcases.MerchandsPageTest</td><td><a href="#m116"><b>validateTitleOfMerchandsPage</b>  </a></td><td class="numi">1</td><td>1558755791245</td><td class="numi">103</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qa.testcases.OrderPageTest</td><td><a href="#m117"><b>validatesearchForOrder</b>  </a></td><td class="numi">1</td><td>1558755818661</td><td class="numi">8842</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.testcases.DashBoardPageTest</td><td><a href="#m118"><b>validateShopCartText</b>  </a></td><td class="numi">1</td><td>1558755845178</td><td class="numi">1260</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">com.qa.testcases.MerchandsPageTest:setup</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.05 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55399}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir10144_15887}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 67af02b317955d06fe5cb1c26095e8b0</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
+<br/>at com.qa.base.TestBase.Initialization(TestBase.java:44)
+<br/>at com.qa.testcases.MerchandsPageTest.setup(MerchandsPageTest.java:30)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.qa.testcases.LoginPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.04 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55351}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11448_3502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9baeaadcdb3a4ce85d8a96890ae447d8</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
+<br/>at com.qa.base.TestBase.Initialization(TestBase.java:44)
+<br/>at com.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.qa.testcases.AddNewPageTest:setup</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55292}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir12116_21562}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7cc4df26ce916e7406ffddc6bd1ea789
+*** Element info: {Using=xpath, value=//a[@id=&apos;page-header-desc-order-new_order&apos;]//i[@class=&apos;process-icon-new&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.qa.pages.OrdersPage.clickOnAddNewUser(OrdersPage.java:73)
+<br/>at com.qa.testcases.AddNewPageTest.setup(AddNewPageTest.java:31)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.qa.testcases.OrderPageTest:setup</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.03 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55445}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11532_12955}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c0ace53c699097c158bb5fb8d84c3cae</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
+<br/>at com.qa.base.TestBase.Initialization(TestBase.java:44)
+<br/>at com.qa.testcases.OrderPageTest.setup(OrderPageTest.java:27)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55493}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir9320_11580}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9382789483a9c47c8a3ef8ba41b2a1d</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
+<br/>at com.qa.base.TestBase.Initialization(TestBase.java:44)
+<br/>at com.qa.testcases.DashBoardPageTest.setUp(DashBoardPageTest.java:30)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.qa.testcases.MerchandsPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">com.qa.testcases.MerchandsPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m81">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">com.qa.testcases.MerchandsPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m89">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m90">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m91">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m92">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m93">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m94">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m95">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m96">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m97">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m98">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m99">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m100">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m101">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m102">com.qa.testcases.MerchandsPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m103">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m104">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m105">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m106">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m107">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m108">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m109">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m110">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m111">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m112">com.qa.testcases.MerchandsPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m113">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m114">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m115">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m116">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m117">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m118">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m119">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m120">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m121">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m122">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m123">com.qa.testcases.OrderPageTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m124">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m125">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m126">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m127">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m128">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m129">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m130">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m131">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m132">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m133">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m134">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m135">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m136">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m137">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m138">com.qa.testcases.OrderPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m139">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m140">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m141">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m142">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m143">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m144">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m145">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m146">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m147">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m148">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m149">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m150">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m151">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m152">com.qa.testcases.LoginPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m153">com.qa.testcases.DashBoardPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m154">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m155">com.qa.testcases.MerchandsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m156">com.qa.testcases.LoginPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m157">com.qa.testcases.DashBoardPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m158">com.qa.testcases.LoginPageTest:validateCorrectEmailAndInvalidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m159">com.qa.testcases.LoginPageTest:validateColorOfLoginBtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m160">com.qa.testcases.DashBoardPageTest:ValidateclickOnAdvancedParameters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m161">com.qa.testcases.DashBoardPageTest:ValidateclickOnStates</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m162">com.qa.testcases.LoginPageTest:validateColorOfGoogleLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m163">com.qa.testcases.DashBoardPageTest:validateClickOnQuickAccess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m164">com.qa.testcases.LoginPageTest:validateInvalidEmailAndValidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m165">com.qa.testcases.LoginPageTest:validateFacebookLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m166">com.qa.testcases.LoginPageTest:validateBlankEmailAndValidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m167">com.qa.testcases.LoginPageTest:validateTextBelowLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m168">com.qa.testcases.OrderPageTest:validateExportlink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m169">com.qa.testcases.DashBoardPageTest:validateConnectToPrestashopMarketPlaceAccountcolor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m170">com.qa.testcases.LoginPageTest:validateColorOfTwitterLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m171">com.qa.testcases.OrderPageTest:validatecheckRefreshlink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m172">com.qa.testcases.LoginPageTest:validateStayLoginText</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m173">com.qa.testcases.LoginPageTest:validateRighReserveLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m174">com.qa.testcases.DashBoardPageTest:ValidateclickOnContactBtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m175">com.qa.testcases.DashBoardPageTest:validateaddCurrentPageToQuickAccess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m176">com.qa.testcases.OrderPageTest:validateOrderPageTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m177">com.qa.testcases.LoginPageTest:validatePrestaLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m178">com.qa.testcases.LoginPageTest:validateBlankEmailPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m179">com.qa.testcases.LoginPageTest:validateEmailPlaceholder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m180">com.qa.testcases.DashBoardPageTest:ValidateclickOnSystemAdministrator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m181">com.qa.testcases.DashBoardPageTest:ValidateclickOnPreferences</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m182">com.qa.testcases.DashBoardPageTest:validateCustomerLogoLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m183">com.qa.testcases.OrderPageTest:validateHelpMenu</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m184">com.qa.testcases.DashBoardPageTest:ValidateClickOnPriceRules</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m185">com.qa.testcases.DashBoardPageTest:validateShowAllCustomerLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m186">com.qa.testcases.AddNewPageTest:validateSwithchToWindow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m187">com.qa.testcases.LoginPageTest:validateForgotPasswordLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m188">com.qa.testcases.DashBoardPageTest:validateQuickAccess1Option</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m189">com.qa.testcases.LoginPageTest:validateInvalidEmailAndInvalidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m190">com.qa.testcases.MerchandsPageTest:validateTimeLimitOfValidity</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m191">com.qa.testcases.OrderPageTest:validatecheckshowSqlQuerylink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m192">com.qa.testcases.DashBoardPageTest:ValidateclickOnAdministration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m193">com.qa.testcases.LoginPageTest:validateIscheckBoXSelectedNot</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m194">com.qa.testcases.LoginPageTest:validateIscheckBoXSelected</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m195">com.qa.testcases.LoginPageTest:validatePasswordPlaceholder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m196">com.qa.testcases.DashBoardPageTest:validateconnectToPrestashopMarketPlaceAccount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m197">com.qa.testcases.DashBoardPageTest:validateQuickAccessBtnColor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m198">com.qa.testcases.OrderPageTest:validateExportToSqlManagerlink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m199">com.qa.testcases.DashBoardPageTest:validateQuickAccess2Option</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m200">com.qa.testcases.DashBoardPageTest:ValidateclickOnLocalization</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m201">com.qa.testcases.LoginPageTest:validateColorOfFacebookLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m202">com.qa.testcases.DashBoardPageTest:validateShowAllMessages</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m203">com.qa.testcases.DashBoardPageTest:ValidateclickOnModulesAndServices</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m204">com.qa.testcases.DashBoardPageTest:ValidateMerchandslink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m205">com.qa.testcases.MerchandsPageTest:validateEnableYes</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m206">com.qa.testcases.LoginPageTest:validateCorrectEmailAndBlankPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m207">com.qa.testcases.DashBoardPageTest:ValidateIsDemoModeBtnEnabled</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m208">com.qa.testcases.DashBoardPageTest:ValidatecountAllLinksOfCurrentPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m209">com.qa.testcases.LoginPageTest:validateGoogleLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m210">com.qa.testcases.DashBoardPageTest:ValidateClickOnHelpMenuBtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m211">com.qa.testcases.LoginPageTest:validateRightsReserveLinkIsDisplayed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m212">com.qa.testcases.LoginPageTest:validateCurrentUrl</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m213">com.qa.testcases.DashBoardPageTest:ValidateCatalogLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m214">com.qa.testcases.DashBoardPageTest:ValidateColorOfSearchBox</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m215">com.qa.testcases.DashBoardPageTest:ValidateSearchBoxBtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m216">com.qa.testcases.MerchandsPageTest:validateReturnsPrefix</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m217">com.qa.testcases.LoginPageTest:validateEmailLable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m218">com.qa.testcases.LoginPageTest:validateColorOfGitHubLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m219">com.qa.testcases.DashBoardPageTest:validateShowOrderLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m220">com.qa.testcases.MerchandsPageTest:validateSavebtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m221">com.qa.testcases.DashBoardPageTest:validateMessageBoxLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m222">com.qa.testcases.LoginPageTest:validateGithubLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m223">com.qa.testcases.LoginPageTest:validEmailAndPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m224">com.qa.testcases.DashBoardPageTest:validateShopCartLogoLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m225">com.qa.testcases.DashBoardPageTest:ValidateclickOnShipping</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m226">com.qa.testcases.DashBoardPageTest:ValidateClickOnMaximizeDashboard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m227">com.qa.testcases.MerchandsPageTest:validateHelpMenu</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m228">com.qa.testcases.OrderPageTest:validateAbanbonedCartslink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m229">com.qa.testcases.DashBoardPageTest:ValidateOrderslink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m230">com.qa.testcases.DashBoardPageTest:ValiodateClickOnCustomers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m231">com.qa.testcases.MerchandsPageTest:validateEnableNo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m232">com.qa.testcases.DashBoardPageTest:validateQuickAccess3Option</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m233">com.qa.testcases.DashBoardPageTest:ValidateclickOnSignOutBtn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m234">com.qa.testcases.LoginPageTest:validatePrestaLogoText</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m235">com.qa.testcases.DashBoardPageTest:validateMyShopLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m236">com.qa.testcases.LoginPageTest:validateTwitterLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m237">com.qa.testcases.OrderPageTest:validatesearchForOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m238">com.qa.testcases.OrderPageTest:validatClickOnAddNewUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m239">com.qa.testcases.LoginPageTest:validateTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m240">com.qa.testcases.AddNewPageTest:validateAddNewCustomer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m241">com.qa.testcases.MerchandsPageTest:validateTitleOfMerchandsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m242">com.qa.testcases.DashBoardPageTest:validateShopCartText</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m243">com.qa.testcases.DashBoardPageTest:validateTitleofDashboard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m244">com.qa.testcases.DashBoardPageTest:validateLogoWithVersion</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
