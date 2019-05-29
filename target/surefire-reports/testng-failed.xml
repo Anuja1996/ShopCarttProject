@@ -1,120 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.qa.ExtendReport.ShopCartExtendReport"/>
+  </listeners>
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.qa.testcases.OrderPageTest">
-        <methods>
-          <include name="validateExportlink"/>
-          <include name="validatecheckRefreshlink"/>
-          <include name="validatesearchForOrder"/>
-          <include name="tearDown"/>
-          <include name="validateHelpMenu"/>
-          <include name="validateExportToSqlManagerlink"/>
-          <include name="validateAbanbonedCartslink"/>
-          <include name="setup"/>
-          <include name="validatecheckshowSqlQuerylink"/>
-          <include name="validateOrderPageTitle"/>
-        </methods>
-      </class> <!-- com.qa.testcases.OrderPageTest -->
       <class name="com.qa.testcases.LoginPageTest">
         <methods>
-          <include name="validatePrestaLogo"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validateBlankEmailAndValidPassword"/>
-          <include name="validateColorOfLoginBtn"/>
-          <include name="validateIscheckBoXSelected"/>
-          <include name="validateIscheckBoXSelectedNot"/>
-          <include name="validatePrestaLogoText"/>
-          <include name="validateColorOfGitHubLogo"/>
-          <include name="validateFacebookLogo"/>
-          <include name="validateGoogleLogo"/>
-          <include name="validateStayLoginText"/>
-          <include name="validateTextBelowLogo"/>
-          <include name="validateInvalidEmailAndValidPassword"/>
-          <include name="validateEmailLable"/>
-          <include name="validateInvalidEmailAndInvalidPassword"/>
-          <include name="validateRightsReserveLinkIsDisplayed"/>
-          <include name="validateRighReserveLink"/>
           <include name="validateTitle"/>
           <include name="validateEmailPlaceholder"/>
-          <include name="validateColorOfGoogleLogo"/>
-          <include name="validateColorOfFacebookLogo"/>
-          <include name="validateCorrectEmailAndBlankPassword"/>
-          <include name="validateGithubLogo"/>
-          <include name="validateForgotPasswordLink"/>
-          <include name="validateColorOfTwitterLogo"/>
-          <include name="validateCorrectEmailAndInvalidPassword"/>
-          <include name="validEmailAndPassword"/>
-          <include name="validateTwitterLogo"/>
-          <include name="validateBlankEmailPassword"/>
           <include name="validatePasswordPlaceholder"/>
-          <include name="validateCurrentUrl"/>
         </methods>
       </class> <!-- com.qa.testcases.LoginPageTest -->
-      <class name="com.qa.testcases.MerchandsPageTest">
-        <methods>
-          <include name="validateEnableNo"/>
-          <include name="validateEnableYes"/>
-          <include name="validateHelpMenu"/>
-          <include name="validateTitleOfMerchandsPage"/>
-          <include name="setup"/>
-          <include name="validateTimeLimitOfValidity"/>
-          <include name="validateSavebtn"/>
-          <include name="validateReturnsPrefix"/>
-        </methods>
-      </class> <!-- com.qa.testcases.MerchandsPageTest -->
-      <class name="com.qa.testcases.DashBoardPageTest">
-        <methods>
-          <include name="ValidatecountAllLinksOfCurrentPage"/>
-          <include name="validateCustomerLogoLink"/>
-          <include name="ValidateMerchandslink"/>
-          <include name="validateaddCurrentPageToQuickAccess"/>
-          <include name="ValidateclickOnStates"/>
-          <include name="ValidateIsDemoModeBtnEnabled"/>
-          <include name="validateClickOnQuickAccess"/>
-          <include name="validateShowAllMessages"/>
-          <include name="validateQuickAccess2Option"/>
-          <include name="ValidateclickOnAdministration"/>
-          <include name="ValidateclickOnAdvancedParameters"/>
-          <include name="ValidateclickOnContactBtn"/>
-          <include name="ValidateclickOnLocalization"/>
-          <include name="validateShowAllCustomerLink"/>
-          <include name="validateQuickAccessBtnColor"/>
-          <include name="ValidateColorOfSearchBox"/>
-          <include name="ValidateclickOnSystemAdministrator"/>
-          <include name="ValidateclickOnShipping"/>
-          <include name="validateMessageBoxLogo"/>
-          <include name="tearDown"/>
-          <include name="ValidateclickOnPreferences"/>
-          <include name="validateTitleofDashboard"/>
-          <include name="ValidateclickOnModulesAndServices"/>
-          <include name="validateShowOrderLink"/>
-          <include name="validateQuickAccess3Option"/>
-          <include name="ValiodateClickOnCustomers"/>
-          <include name="ValidateClickOnHelpMenuBtn"/>
-          <include name="ValidateClickOnPriceRules"/>
-          <include name="ValidateOrderslink"/>
-          <include name="validateconnectToPrestashopMarketPlaceAccount"/>
-          <include name="validateShopCartLogoLink"/>
-          <include name="setUp"/>
-          <include name="ValidateclickOnSignOutBtn"/>
-          <include name="ValidateClickOnMaximizeDashboard"/>
-          <include name="validateConnectToPrestashopMarketPlaceAccountcolor"/>
-          <include name="validateMyShopLink"/>
-          <include name="validateQuickAccess1Option"/>
-          <include name="ValidateSearchBoxBtn"/>
-          <include name="ValidateCatalogLink"/>
-          <include name="validateShopCartText"/>
-        </methods>
-      </class> <!-- com.qa.testcases.DashBoardPageTest -->
-      <class name="com.qa.testcases.AddNewPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="validateAddNewCustomer"/>
-          <include name="validateSwithchToWindow"/>
-        </methods>
-      </class> <!-- com.qa.testcases.AddNewPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/79</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 25 09:10:50 IST 2019</td>
+<td>Started on:</td><td>Tue May 28 14:04:04 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>296 seconds (296884 ms)</td>
+<tr><td>Total time:</td><td>141 seconds (141654 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,1134 +68,231 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.testcases.AddNewPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.AddNewPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+<td title='com.qa.testcases.LoginPageTest.validateEmailPlaceholder()'><b>validateEmailPlaceholder</b><br>Test class: com.qa.testcases.LoginPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@ placeholder=&apos; test@example.com&apos;]&quot;}
   (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRIYANKA_ACER&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55292}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir12116_21562}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7cc4df26ce916e7406ffddc6bd1ea789
-*** Element info: {Using=xpath, value=//a[@id=&apos;page-header-desc-order-new_order&apos;]//i[@class=&apos;process-icon-new&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.qa.pages.OrdersPage.clickOnAddNewUser(OrdersPage.java:73)
-	at com.qa.testcases.AddNewPageTest.setup(AddNewPageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313869647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace313869647'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Priyanka\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60693}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 0f6d7b076a5779b8dd04cb4503436c7e
+*** Element info: {Using=xpath, value=//input[@ placeholder=&apos; test@example.com&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.qa.pages.LoginPage.checkEmailPlaceholder(LoginPage.java:99)
+	at com.qa.testcases.LoginPageTest.validateEmailPlaceholder(LoginPageTest.java:70)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889757798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889757798'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@ placeholder=&apos; test@example.com&apos;]&quot;}
   (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRIYANKA_ACER&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55292}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir12116_21562}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7cc4df26ce916e7406ffddc6bd1ea789
-*** Element info: {Using=xpath, value=//a[@id=&apos;page-header-desc-order-new_order&apos;]//i[@class=&apos;process-icon-new&apos;]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Priyanka\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60693}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 0f6d7b076a5779b8dd04cb4503436c7e
+*** Element info: {Using=xpath, value=//input[@ placeholder=&apos; test@example.com&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.qa.pages.OrdersPage.clickOnAddNewUser(OrdersPage.java:73)
-	at com.qa.testcases.AddNewPageTest.setup(AddNewPageTest.java:31)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.qa.pages.LoginPage.checkEmailPlaceholder(LoginPage.java:99)
+	at com.qa.testcases.LoginPageTest.validateEmailPlaceholder(LoginPageTest.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.testcases.AddNewPageTest@2d209079</td></tr>
+<td>20</td>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+<td title='com.qa.testcases.LoginPageTest.validatePasswordPlaceholder()'><b>validatePasswordPlaceholder</b><br>Test class: com.qa.testcases.LoginPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos; Password&apos;]&quot;}
   (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.04 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRIYANKA_ACER&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55351}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11448_3502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9baeaadcdb3a4ce85d8a96890ae447d8
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400671358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1400671358'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Priyanka\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60734}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 6ff4a3a5bb7022aec4ff2718fe895789
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos; Password&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.qa.pages.LoginPage.checkPasswordPlaceholder(LoginPage.java:103)
+	at com.qa.testcases.LoginPageTest.validatePasswordPlaceholder(LoginPageTest.java:76)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1141500277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1141500277'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos; Password&apos;]&quot;}
   (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.04 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRIYANKA_ACER&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55351}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11448_3502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9baeaadcdb3a4ce85d8a96890ae447d8
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Priyanka\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60734}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 6ff4a3a5bb7022aec4ff2718fe895789
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos; Password&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+	at com.qa.pages.LoginPage.checkPasswordPlaceholder(LoginPage.java:103)
+	at com.qa.testcases.LoginPageTest.validatePasswordPlaceholder(LoginPageTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
+<td>20</td>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.05 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55399}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir10144_15887}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 67af02b317955d06fe5cb1c26095e8b0
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.MerchandsPageTest.setup(MerchandsPageTest.java:30)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1568159144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1568159144'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.05 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55399}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir10144_15887}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 67af02b317955d06fe5cb1c26095e8b0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.MerchandsPageTest.setup(MerchandsPageTest.java:30)
+<td title='com.qa.testcases.LoginPageTest.validateTitle()'><b>validateTitle</b><br>Test class: com.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [ShopCartt &gt; Administration panel (PrestaShop™)] but found [ShopCartt &gt; Administration panel (PrestaShop�)]
+	at com.qa.testcases.LoginPageTest.validateTitle(LoginPageTest.java:33)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1912821769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1912821769'><pre>java.lang.AssertionError: expected [ShopCartt &gt; Administration panel (PrestaShop™)] but found [ShopCartt &gt; Administration panel (PrestaShop�)]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.qa.testcases.LoginPageTest.validateTitle(LoginPageTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.03 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55445}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11532_12955}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c0ace53c699097c158bb5fb8d84c3cae
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.OrderPageTest.setup(OrderPageTest.java:27)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2063332705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2063332705'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.03 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55445}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir11532_12955}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c0ace53c699097c158bb5fb8d84c3cae
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.OrderPageTest.setup(OrderPageTest.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.01 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55493}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir9320_11580}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a9382789483a9c47c8a3ef8ba41b2a1d
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.DashBoardPageTest.setUp(DashBoardPageTest.java:30)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1648387359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1648387359'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.01 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Priyanka_Acer&apos;, ip: &apos;192.168.43.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55493}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\Priyanka\AppData\Local\Temp\scoped_dir9320_11580}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a9382789483a9c47c8a3ef8ba41b2a1d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:693)
-	at com.qa.base.TestBase.Initialization(TestBase.java:44)
-	at com.qa.testcases.DashBoardPageTest.setUp(DashBoardPageTest.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.setUp()'><b>setUp</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1205,448 +302,40 @@ Session ID: a9382789483a9c47c8a3ef8ba41b2a1d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.testcases.OrderPageTest.validatClickOnAddNewUser()'><b>validatClickOnAddNewUser</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.AddNewPageTest.validateAddNewCustomer()'><b>validateAddNewCustomer</b><br>Test class: com.qa.testcases.AddNewPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.qa.testcases.AddNewPageTest@2d209079</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateLogoWithVersion()'><b>validateLogoWithVersion</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateShopCartText()'><b>validateShopCartText</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateTitle()'><b>validateTitle</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateTitleOfMerchandsPage()'><b>validateTitleOfMerchandsPage</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateTitleofDashboard()'><b>validateTitleofDashboard</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validatesearchForOrder()'><b>validatesearchForOrder</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateCatalogLink()'><b>ValidateCatalogLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateClickOnHelpMenuBtn()'><b>ValidateClickOnHelpMenuBtn</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateClickOnMaximizeDashboard()'><b>ValidateClickOnMaximizeDashboard</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateClickOnPriceRules()'><b>ValidateClickOnPriceRules</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateColorOfSearchBox()'><b>ValidateColorOfSearchBox</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateIsDemoModeBtnEnabled()'><b>ValidateIsDemoModeBtnEnabled</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateMerchandslink()'><b>ValidateMerchandslink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateOrderslink()'><b>ValidateOrderslink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateSearchBoxBtn()'><b>ValidateSearchBoxBtn</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnAdministration()'><b>ValidateclickOnAdministration</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnAdvancedParameters()'><b>ValidateclickOnAdvancedParameters</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnContactBtn()'><b>ValidateclickOnContactBtn</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnLocalization()'><b>ValidateclickOnLocalization</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnModulesAndServices()'><b>ValidateclickOnModulesAndServices</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnPreferences()'><b>ValidateclickOnPreferences</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnShipping()'><b>ValidateclickOnShipping</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnSignOutBtn()'><b>ValidateclickOnSignOutBtn</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnStates()'><b>ValidateclickOnStates</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidateclickOnSystemAdministrator()'><b>ValidateclickOnSystemAdministrator</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValidatecountAllLinksOfCurrentPage()'><b>ValidatecountAllLinksOfCurrentPage</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.ValiodateClickOnCustomers()'><b>ValiodateClickOnCustomers</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validateAbanbonedCartslink()'><b>validateAbanbonedCartslink</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
 <td title='com.qa.testcases.LoginPageTest.validateBlankEmailAndValidPassword()'><b>validateBlankEmailAndValidPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
+<td>2</td>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validateBlankEmailPassword()'><b>validateBlankEmailPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateClickOnQuickAccess()'><b>validateClickOnQuickAccess</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateColorOfFacebookLogo()'><b>validateColorOfFacebookLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateColorOfGitHubLogo()'><b>validateColorOfGitHubLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateColorOfGoogleLogo()'><b>validateColorOfGoogleLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateColorOfLoginBtn()'><b>validateColorOfLoginBtn</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateColorOfTwitterLogo()'><b>validateColorOfTwitterLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateConnectToPrestashopMarketPlaceAccountcolor()'><b>validateConnectToPrestashopMarketPlaceAccountcolor</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateCorrectEmailAndBlankPassword()'><b>validateCorrectEmailAndBlankPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateCorrectEmailAndInvalidPassword()'><b>validateCorrectEmailAndInvalidPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
+<td>2</td>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validateCurrentUrl()'><b>validateCurrentUrl</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateCustomerLogoLink()'><b>validateCustomerLogoLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validateEmailLable()'><b>validateEmailLable</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateEmailPlaceholder()'><b>validateEmailPlaceholder</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateEnableNo()'><b>validateEnableNo</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateEnableYes()'><b>validateEnableYes</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validateExportToSqlManagerlink()'><b>validateExportToSqlManagerlink</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validateExportlink()'><b>validateExportlink</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateFacebookLogo()'><b>validateFacebookLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateForgotPasswordLink()'><b>validateForgotPasswordLink</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateGithubLogo()'><b>validateGithubLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateGoogleLogo()'><b>validateGoogleLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateHelpMenu()'><b>validateHelpMenu</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validateHelpMenu()'><b>validateHelpMenu</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateInvalidEmailAndInvalidPassword()'><b>validateInvalidEmailAndInvalidPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateInvalidEmailAndValidPassword()'><b>validateInvalidEmailAndValidPassword</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateIscheckBoXSelected()'><b>validateIscheckBoXSelected</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateIscheckBoXSelectedNot()'><b>validateIscheckBoXSelectedNot</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateMessageBoxLogo()'><b>validateMessageBoxLogo</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateMyShopLink()'><b>validateMyShopLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validateOrderPageTitle()'><b>validateOrderPageTitle</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validatePasswordPlaceholder()'><b>validatePasswordPlaceholder</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validatePrestaLogo()'><b>validatePrestaLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validatePrestaLogoText()'><b>validatePrestaLogoText</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateQuickAccess1Option()'><b>validateQuickAccess1Option</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateQuickAccess2Option()'><b>validateQuickAccess2Option</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateQuickAccess3Option()'><b>validateQuickAccess3Option</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateQuickAccessBtnColor()'><b>validateQuickAccessBtnColor</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateReturnsPrefix()'><b>validateReturnsPrefix</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateRighReserveLink()'><b>validateRighReserveLink</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateRightsReserveLinkIsDisplayed()'><b>validateRightsReserveLinkIsDisplayed</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateSavebtn()'><b>validateSavebtn</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateShopCartLogoLink()'><b>validateShopCartLogoLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateShowAllCustomerLink()'><b>validateShowAllCustomerLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateShowAllMessages()'><b>validateShowAllMessages</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateShowOrderLink()'><b>validateShowOrderLink</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateStayLoginText()'><b>validateStayLoginText</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.AddNewPageTest.validateSwithchToWindow()'><b>validateSwithchToWindow</b><br>Test class: com.qa.testcases.AddNewPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.AddNewPageTest@2d209079</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 <tr>
 <td title='com.qa.testcases.LoginPageTest.validateTextBelowLogo()'><b>validateTextBelowLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.MerchandsPageTest.validateTimeLimitOfValidity()'><b>validateTimeLimitOfValidity</b><br>Test class: com.qa.testcases.MerchandsPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.MerchandsPageTest@3ac3fd8b</td></tr>
-<tr>
-<td title='com.qa.testcases.LoginPageTest.validateTwitterLogo()'><b>validateTwitterLogo</b><br>Test class: com.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.LoginPageTest@43a25848</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateaddCurrentPageToQuickAccess()'><b>validateaddCurrentPageToQuickAccess</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validatecheckRefreshlink()'><b>validatecheckRefreshlink</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.OrderPageTest.validatecheckshowSqlQuerylink()'><b>validatecheckshowSqlQuerylink</b><br>Test class: com.qa.testcases.OrderPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.OrderPageTest@6a5fc7f7</td></tr>
-<tr>
-<td title='com.qa.testcases.DashBoardPageTest.validateconnectToPrestashopMarketPlaceAccount()'><b>validateconnectToPrestashopMarketPlaceAccount</b><br>Test class: com.qa.testcases.DashBoardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.testcases.DashBoardPageTest@5594a1b5</td></tr>
+<td>com.qa.testcases.LoginPageTest@6debcae2</td></tr>
 </table><p>
 </body>
 </html>

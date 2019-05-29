@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 
 import com.qa.testcases.LoginPageTest;
 
@@ -52,6 +53,10 @@ public class TestBase {
 			driver.get(prop.getProperty("url"));
 			
 			//driver.get("https://javaclassesinpune.com/projects/shopcart/index.php");
+			
+		}
+		public void onTestFailure(ITestResult result) {
+			// TODO Auto-generated method stub
 			
 		}
 		

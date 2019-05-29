@@ -22,10 +22,10 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//label[contains(text(),'Email address')]")
 	WebElement emailLable;
 	
-	@FindBy(xpath="//input[@ placeholder=\' test@example.com']")
+	@FindBy(xpath="//input[@ placeholder=' test@example.com']")
 	WebElement emailPlaceholder;
 	
-	@FindBy(xpath="//input[@placeholder=\' Password']")
+	@FindBy(xpath="//input[@placeholder=' Password']")
 	WebElement passwordPlaceholder;
 	
 	@FindBy(xpath="//input[@id='email']")
@@ -63,7 +63,7 @@ public class LoginPage extends TestBase {
 	
 	
 
-	//a[contains(text(),'© PrestaShop™ 2007-2019 - All rights reserved')]
+	//a[contains(text(),'Â© PrestaShopâ„¢ 2007-2019 - All rights reserved')]
 	
 	public LoginPage(){
 		PageFactory.initElements(driver, this);
